@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>鑫丰热力智能数据监控系统</title>
+    <link rel="stylesheet" type="text/css"  href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/modules/layer/default/layer.css">
+</head>
+<body>
+    <!-- 布局开始 -->
+    <div id="wrapper">
+        <div id="top">
+            <div class="logo f20 fl" style="width:300px;">唐山市鑫丰热力智能数据监控系统</div>
+            <div class="rbox fr">
+               <div class="f12 notice pointer"><marquee behavior="scroll" contenteditable="true" onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" scrollamount="3" width="600" οnmοuseοver="this.stop();" οnmοuseοut="this.start();"> <b class="f14">公告</b>：12月1日 20时18分 广电站机组数据采集失败、xx机组一次文档异常</marquee></div> 
+               <div><a class="user" href="javascript:void(0)">欢迎！ <span>admin</span></a><a class="warning" href="javascript:void(0)"></a></div>
+            </div>
+        </div>
+        <!-- 左侧内容开始 -->
+        <div id="left">
+            <div class="list">
+                <a href="../realTime.html"  target="main"  class="actvie">实时监控</a>
+                <a href="../controlMg.html" target="main"  class="control">控制管理</a>
+                <a href="../historyData.html" target="main" class="history">历史数据</a>
+                <a href="../dataAnalyze.html" target="main" class="data">数据分析</a>  
+                <a href="../siteMg.html" target="main" class="site">站点管理</a>
+                <a href="../maintainMg.html" target="main" class="maintain">维护管理</a> 
+                <a href="../reportMg.html" target="main" class="report">报表管理</a>
+                <a href="../systemMg.html" target="main" class="system">系统管理</a>   
+           </div>
+        </div>
+        <div id="right">
+            <!-- 右侧内容开始 -->
+            <div class="right_in">
+                <!-- 用户中心模块开始 -->
+                <div class="first border-b">
+                    <ul>
+                        <li class="now">站点列表</li>
+                        <li>机组管理</li>
+                    </ul>
+                </div>
+                <!-- 内容开始 -->
+                <div class="in_content">
+                    <div class="con">
+                        <div class="choose mr re">
+                            <div class="choose_title fl ">区域：</div>
+                            <div class="choose_box fl re down border02" id="choose_box">
+                                全部
+                            </div>
+                        </div>
+                       <div class="choose mr re">
+                            <div class="choose_title fl ">站点名称：</div>
+                            <div class="choose_box fl re down border02" id="choose_box">
+                                全部
+                            </div>
+                            <a href="#" class="button ml02">查询</a>   
+                        </div>
+                        <a href="#" class="button ml02 fr">添加</a>   
+                        <table class="con_table">
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>区域</th>
+                                    <th>站点名称</th>
+                                    <th>建造年份</th>
+                                    <th>编号</th>
+                                    <th>地址</th>
+                                    <th>经度</th>
+                                    <th>纬度</th>
+                                    <th>供热面积</th>
+                                    <th>居建面积</th>
+                                    <th>公建面积</th>
+                                    <th>用户数量</th>
+                                    <th>换热能力</th>
+                                    <th>作用面积</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>北区</td>
+                                    <td>碧桂园</td>
+                                    <td>19/05/02</td>
+                                    <td>26.3</td>
+                                    <td>65</td>
+                                    <td>65.5 </td>
+                                    <td>32</td>
+                                    <td>33.2</td>
+                                    <td>55.9</td>
+                                    <td>78.3</td>
+                                    <td>85.2 </td>
+                                    <td>65</td>
+                                    <td>54</td>
+                                    <td><a>删除</a>&nbsp;&nbsp;<a>编辑</a> </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>北区</td>
+                                    <td>碧桂园</td>
+                                    <td>19/05/02</td>
+                                    <td>26.3</td>
+                                    <td>65</td>
+                                    <td>65.5 </td>
+                                    <td>32</td>
+                                    <td>33.2</td>
+                                    <td>55.9</td>
+                                    <td>78.3</td>
+                                    <td>85.2 </td>
+                                    <td>65</td>
+                                    <td>54</td>
+                                    <td><a>删除</a>&nbsp;&nbsp;<a>编辑</a> </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>北区</td>
+                                    <td>碧桂园</td>
+                                    <td>19/05/02</td>
+                                    <td>26.3</td>
+                                    <td>65</td>
+                                    <td>65.5 </td>
+                                    <td>32</td>
+                                    <td>33.2</td>
+                                    <td>55.9</td>
+                                    <td>78.3</td>
+                                    <td>85.2 </td>
+                                    <td>65</td>
+                                    <td>54</td>
+                                    <td><a>删除</a>&nbsp;&nbsp;<a>编辑</a> </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>北区</td>
+                                    <td>碧桂园</td>
+                                    <td>19/05/02</td>
+                                    <td>26.3</td>
+                                    <td>65</td>
+                                    <td>65.5 </td>
+                                    <td>32</td>
+                                    <td>33.2</td>
+                                    <td>55.9</td>
+                                    <td>78.3</td>
+                                    <td>85.2 </td>
+                                    <td>65</td>
+                                    <td>54</td>
+                                    <td><a>删除</a>&nbsp;&nbsp;<a>编辑</a> </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>北区</td>
+                                    <td>碧桂园</td>
+                                    <td>19/05/02</td>
+                                    <td>26.3</td>
+                                    <td>65</td>
+                                    <td>65.5 </td>
+                                    <td>32</td>
+                                    <td>33.2</td>
+                                    <td>55.9</td>
+                                    <td>78.3</td>
+                                    <td>85.2 </td>
+                                    <td>65</td>
+                                    <td>54</td>
+
+                                    <td><a>删除</a>&nbsp;&nbsp;<a>编辑</a> </td>
+
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>北区</td>
+                                    <td>碧桂园</td>
+                                    <td>19/05/02</td>
+                                    <td>26.3</td>
+                                    <td>65</td>
+                                    <td>65.5 </td>
+                                    <td>32</td>
+                                    <td>33.2</td>
+                                    <td>55.9</td>
+                                    <td>78.3</td>
+                                    <td>85.2 </td>
+                                    <td>65</td>
+                                    <td>54</td>
+                                    <td><a>删除</a>&nbsp;&nbsp;<a>编辑</a> </td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>北区</td>
+                                    <td>碧桂园</td>
+                                    <td>19/05/02</td>
+                                    <td>26.3</td>
+                                    <td>65</td>
+                                    <td>65.5 </td>
+                                    <td>32</td>
+                                    <td>33.2</td>
+                                    <td>55.9</td>
+                                    <td>78.3</td>
+                                    <td>85.2 </td>
+                                    <td>65</td>
+                                    <td>54</td>
+                                    <td><a>删除</a>&nbsp;&nbsp;<a>编辑</a> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--分页-->
+                        <div id="demo1" class="fr"></div>
+                    </div>
+                    <div class="con nodis">
+                        <div class="choose mr re">
+                            <div class="choose_title fl ">区域：</div>
+                            <div class="choose_box re down border02 fl " id="choose_box">
+                                全部
+                            </div>
+                        </div>
+                        <div class="choose mr re">
+                            <div class="choose_title fl ">站点名称：</div>
+                            <div class="choose_box fl re down border02" id="choose_box">
+                                全部
+                            </div>
+                            <a href="#" class="button ml02">查询</a>   
+                        </div>
+                        <a href="#" class="button ml02  fr">添加</a>
+                        <table class="con_table">
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>区域</th>
+                                    <th>站点</th>
+                                    <th>建设时间</th>
+                                    <th>机组</th>
+                                    <th>编号</th>
+                                    <th>供热面积</th>
+                                    <th>供暖模式</th>
+                                    <th>用于类型</th>
+                                    <th>协议类型</th>
+                                    <th>ip地址</th>
+                                    <th>机组参数</th>
+                                    <th>机组设备</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>北区</td>
+                                    <td>碧桂园</td>
+                                    <td>19/05/02</td>
+                                    <td>高区</td>
+                                    <td>65</td>
+                                    <td>65.5 </td>
+                                    <td>32</td>
+                                    <td>33.2</td>
+                                    <td>55.9</td>
+                                    <td>78.3</td>
+                                    <td><a>设置</a></td>
+                                    <td><a>管理</a></td>
+                                    <td><a>删除</a>&nbsp;&nbsp;<a>编辑</a> </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>北区</td>
+                                    <td>碧桂园</td>
+                                    <td>19/05/02</td>
+                                    <td>26.3</td>
+                                    <td>65</td>
+                                    <td>65.5 </td>
+                                    <td>32</td>
+                                    <td>33.2</td>
+                                    <td>55.9</td>
+                                    <td>78.3</td>
+                                    <td><a>设置</a></td>
+                                    <td><a>管理</a></td>
+                                    <td><a>删除</a>&nbsp;&nbsp;<a>编辑</a> </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>北区</td>
+                                    <td>碧桂园</td>
+                                    <td>19/05/02</td>
+                                    <td>26.3</td>
+                                    <td>65</td>
+                                    <td>65.5 </td>
+                                    <td>32</td>
+                                    <td>33.2</td>
+                                    <td>55.9</td>
+                                    <td>78.3</td>
+                                    <td><a>设置</a></td>
+                                    <td><a>管理</a></td>
+                                    <td><a>删除</a>&nbsp;&nbsp;<a>编辑</a> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!--分页-->
+                    <div id="demo0" class="fr"></div>
+                </div>
+                <!-- 内容结束 -->
+            </div>
+            <!-- 右侧内容结束 -->
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script>
+        //右侧一级tab
+        $('.first > ul >li').click(function (){
+            firstFval = $(this).index();
+            $(this).addClass('now').siblings().removeClass('now');
+            $('.in_content>.con').eq(firstFval).show().siblings().hide(); 
+        });
+    </script>
+</body>
+</html>

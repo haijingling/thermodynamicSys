@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <title>鑫丰热力智能数据监控系统</title>
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/manage.css">
+    <link rel="stylesheet" type="text/css" href="css/modules/layer/default/layer.css">
+    <style>
+        .param {
+            text-align: right !important;
+            width: 170px;
+        }
+
+        #stateModel1 > .panel {
+            padding: 30px;
+        }
+
+        #stateModel1 .panel-area {
+            display: inline-block;
+            width: 200px;
+        }
+
+        #stateModel1 .panel-area-title {
+            line-height: 30px;
+        }
+
+        #stateModel1 .panel-area-ctrl {
+            width: 100%;
+            height: 260px;
+        }
+
+        #stateModel1 .panel-area-btns {
+            display: inline-block;
+            width: 30px;
+            vertical-align: top;
+            box-sizing: border-box;
+            padding-top: 60px;
+            text-align: center;
+        }
+
+        #stateModel1 .panel-area-btns button {
+            width: 24px;
+            height: 24px;
+            margin-top: 15px;
+            position: relative;
+            padding: 0;
+        }
+
+        #stateModel1 .panel-area-btns button:before,
+        #stateModel1 .panel-area-btns button:after {
+            content: "";
+            display: block;
+            border: solid 1px #000;
+            border-left: none;
+            border-bottom: none;
+            transform: rotate(45deg);
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            top: 5px;
+        }
+
+        #stateModel1 .panel-area-btns .left:after,
+        #stateModel1 .panel-area-btns .right:after {
+            content: none;
+        }
+
+        #stateModel1 .panel-area-btns .left:before,
+        #stateModel1 .panel-area-btns .right:before {
+            left: 3px;
+        }
+
+        #stateModel1 .panel-area-btns .dleft:before,
+        #stateModel1 .panel-area-btns .dright:before {
+            left: 6px;
+        }
+
+        #stateModel1 .panel-area-btns [class$=left] {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- 框架布局 -->
+    <div id="wrapper">
+        <div id="right">
+            <!-- 右侧内容开始 -->
+            <div class="right_in">
+                <!-- 面包屑 -->
+                <div class="area border-b">
+                    您的位置：
+                    <a href="dataAnalyze.html">控制管理 </a>>>
+                    <a href="dataAnalyze.html">参数设置 </a>>>
+                    <a href="#">完善参数 </a>
+                </div>
+                <!-- 内容开始 -->
+                <div class="in_content">
+                    <div class="con">
+                        <div class="border" style="padding: 20px 0 100px">
+                            <table class="con_table con_table02 mb">
+                                <tbody>
+                                    <tr>
+                                        <td class="param">参数设置： </td>
+                                        <td>
+                                            <input type="text" class="fl border02 input width01 marl">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="param">参数编号： </td>
+                                        <td>
+                                            <input type="text" class="fl border02 input width01 marl">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="param">参数类型： </td>
+                                        <td>
+                                            <input type="text" class="fl border02 input width01 marl">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="param">所属区域： </td>
+                                        <td>
+                                            <input type="text" class="fl border02 input width01 marl">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="param">PLC编号： </td>
+                                        <td>
+                                            <input type="text" class="fl border02 input width01 marl">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="param">数据列名： </td>
+                                        <td>
+                                            <input type="text" class="fl border02 input width01 marl">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="param">默认值： </td>
+                                        <td>
+                                            <input type="text" class="fl border02 input width01 marl">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="param">最小值： </td>
+                                        <td>
+                                            <input type="text" class="fl border02 input width01 marl">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="param">最小值： </td>
+                                        <td>
+                                            <input type="text" class="fl border02 input width01 marl">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="param">单位： </td>
+                                        <td>
+                                            <input type="text" class="fl border02 input width01 marl">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="param">是否显示： </td>
+                                        <td class="left">
+                                            <label class="bui-radios-label bui-radios-anim fl marl">
+                                                <input type="radio" name="sex"><i class="bui-radios"></i>是
+                                            </label>
+                                            <label class="bui-radios-label bui-radios-anim fl marl">
+                                                <input type="radio" name="sex"><i class="bui-radios"></i>否
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="param">显示标题： </td>
+                                        <td>
+                                            <input type="text" class="fl border02 input width01 marl">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="param">排序： </td>
+                                        <td>
+                                            <input type="text" class="fl border02 input width01 marl">
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <a href="#" class="buttonN ml01 fl mt01">取消</a>
+                            <a href="#" class="buttonOk ml02 fl mt01">确定</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 内容结束 -->
+            </div>
+            <!-- 右侧内容结束 -->
+        </div>
+        </div>
+    
+</body>
+</html>

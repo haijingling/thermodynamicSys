@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>鑫丰热力智能数据监控系统</title>
+	<link rel="stylesheet" type="text/css"  href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/modules/layer/default/layer.css">
+    <link rel="stylesheet" type="text/css" href="css/manage.css">
+    <style>
+        .param {
+            text-align: right !important;
+            width: 170px;
+        }
+
+        #stateModel1 > .panel {
+            padding: 30px;
+        }
+
+        #stateModel1 .panel-area {
+            display: inline-block;
+            width: 200px;
+        }
+
+        #stateModel1 .panel-area-title {
+            line-height: 30px;
+        }
+
+        #stateModel1 .panel-area-ctrl {
+            width: 100%;
+            height: 260px;
+        }
+
+        #stateModel1 .panel-area-btns {
+            display: inline-block;
+            width: 30px;
+            vertical-align: top;
+            box-sizing: border-box;
+            padding-top: 60px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+	<!-- 框架布局 -->
+	<div id="wrapper">
+		<div id="right">
+			<!-- 右侧内容开始 -->
+			<div class="right_in"> 
+				<!-- 用户中心模块开始 -->
+				<div class="first border-b">
+				     <ul>
+				     	<li class="now">设备管理</li>
+				     	<li>设备生产商管理</li>
+				     	<li>施工单位管理</li>
+				     	<li>人员管理</li>
+                        <li>系统参数</li>
+				     </ul>
+				</div> 
+				<!-- 内容开始 -->
+				<div class="in_content">
+					<div class="con">
+                        <div class="con_title">
+                            <div class="choose mr re">
+                                <div class="choose_title fl ">关键字:</div>
+                                <div class="choose_box fl re  border02">
+                                    <input type="text" class="input01">
+                                </div>
+                                <a href="#" class="button02 marl">搜索</a>
+                            </div>
+                            <a href="#" class="button ml02 fr">添加</a>
+                        </div>
+						<table class="con_table">
+							<thead>
+								<tr>                                                                      
+									<th>序号</th>
+									<th>设备名称</th>
+                                    <th>设备型号</th>
+									<th>设备类型</th>
+									<th>生产厂家</th>
+									<th>材质</th>
+                                    <th>服役期限</th>
+									<th>操作</th>									
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>控制阀 </td>
+									<td>DF0001</td>
+									<td>阀门</td>
+									<td>北京xx厂</td>
+									<td>纯铜</td>
+									<td>5年 </td>
+									<td>删除 修改</td>
+								</tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>控制阀 </td>
+                                    <td>DF0001</td>
+                                    <td>阀门</td>
+                                    <td>北京xx厂</td>
+                                    <td>纯铜</td>
+                                    <td>5年 </td>
+                                    <td>删除 修改</td>
+                                </tr>
+								 <tr>
+									<td>3</td>
+                                    <td>控制阀 </td>
+                                    <td>DF0001</td>
+                                    <td>阀门</td>
+                                    <td>北京xx厂</td>
+                                    <td>纯铜</td>
+                                    <td>5年 </td>
+                                    <td>删除 修改</td>
+								</tr>
+							</tbody>
+					    </table>  
+					</div>
+					<div class="con nodis">
+                        <div class="con_title">
+                            <div class="choose mr re">
+                                <div class="choose_title fl ">关键字:</div>
+                                <div class="choose_box fl re  border02">
+                                    <input type="text" class="input01">
+                                </div>
+                                <a href="#" class="button02 marl">搜索</a>
+                            </div>
+                            <a href="#" class="button ml02 fr">添加</a>
+                        </div>
+					    <div class="con_second">
+					    	<table class="con_table">
+								<thead>
+									<tr>                                                                      
+										<th>序号</th>
+										<th>厂家名称</th>
+										<th>负责人</th>
+										<th>电话</th>
+										<th>邮箱</th>
+										<th>售后电话</th>
+										<th>地址</th>
+										<th>操作</th>									
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>北京xx厂 </td>
+										<td>张三</td>
+										<td>1388888888</td>
+										<td>888@888.com</td>
+										<td>010-8888888</td>
+										<td>北京市朝阳区xxx</td>
+                                        <td>删除 修改</td>
+									</tr>
+									<tr>
+										<td>2</td>
+                                        <td>北京xx厂 </td>
+                                        <td>张三</td>
+                                        <td>1388888888</td>
+                                        <td>888@888.com</td>
+                                        <td>010-8888888</td>
+                                        <td>北京市朝阳区xxx</td>
+                                        <td>删除 修改</td>
+									</tr>
+									 <tr>
+										<td>3</td>
+                                        <td>北京xx厂 </td>
+                                        <td>张三</td>
+                                        <td>1388888888</td>
+                                        <td>888@888.com</td>
+                                        <td>010-8888888</td>
+                                        <td>北京市朝阳区xxx</td>
+                                        <td>删除 修改</td>
+									</tr>
+								</tbody>
+						    </table> 
+					    </div>
+					    <div class="con_second nodis">
+					        <div>ddddd</div>
+					    </div>
+					</div>
+					<div class="con nodis">
+                        <div class="con_title">
+                            <div class="choose mr re">
+                                <div class="choose_title fl ">关键字:</div>
+                                <div class="choose_box fl re  border02">
+                                    <input type="text" class="input01">
+                                </div>
+                                <a href="#" class="button02 marl">搜索</a>
+                            </div>
+                            <a href="#" class="button ml02 fr">添加</a>
+                        </div>
+						<table class="con_table">
+							<thead>
+								<tr>                                                                      
+									<th>序号</th>
+                                    <th>施工单位</th>
+                                    <th>负责人</th>
+                                    <th>电话</th>
+                                    <th>邮箱</th>
+                                    <th>公司电话</th>
+                                    <th>地址</th>
+                                    <th>操作</th>							
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+                                    <td>河北唐山方辰科技有限公司 </td>
+                                    <td>刘建</td>
+                                    <td>1388888888</td>
+                                    <td>888@888.com</td>
+                                    <td>010-8888888</td>
+                                    <td>河北省唐山市古冶区xxx</td>
+                                    <td>删除 修改</td>		
+								</tr>
+								<tr>
+									<td>2</td>
+                                    <td>河北唐山方辰科技有限公司 </td>
+                                    <td>刘建</td>
+                                    <td>1388888888</td>
+                                    <td>888@888.com</td>
+                                    <td>010-8888888</td>
+                                    <td>河北省唐山市古冶区xxx</td>
+                                    <td>删除 修改</td>		
+								</tr>
+								<tr>
+									<td>3</td>
+                                    <td>河北唐山方辰科技有限公司 </td>
+                                    <td>刘建</td>
+                                    <td>1388888888</td>
+                                    <td>888@888.com</td>
+                                    <td>010-8888888</td>
+                                    <td>河北省唐山市古冶区xxx</td>
+                                    <td>删除 修改</td>		
+								</tr>
+								<tr>
+									<td>4</td>
+                                    <td>河北唐山方辰科技有限公司 </td>
+                                    <td>刘建</td>
+                                    <td>1388888888</td>
+                                    <td>888@888.com</td>
+                                    <td>010-8888888</td>
+                                    <td>河北省唐山市古冶区xxx</td>
+                                    <td>删除 修改</td>		
+								</tr>
+								<tr>
+									<td>5</td>
+                                    <td>河北唐山方辰科技有限公司 </td>
+                                    <td>刘建</td>
+                                    <td>1388888888</td>
+                                    <td>888@888.com</td>
+                                    <td>010-8888888</td>
+                                    <td>河北省唐山市古冶区xxx</td>
+                                    <td>删除 修改</td>		
+								</tr>
+							</tbody>
+					    </table> 
+					</div>
+					<div class="con nodis">
+                        <div class="con_title">
+                            <div class="choose mr re">
+                                <div class="choose_title fl ">关键字:</div>
+                                <div class="choose_box fl re  border02">
+                                    <input type="text" class="input01">
+                                </div>
+                                <a href="#" class="button02 marl">搜索</a>
+                            </div>
+                            <a href="#" class="button ml02 fr">添加</a>
+                        </div>
+						<table class="con_table">
+							<thead>
+								<tr>                                                                      
+									<th>序号</th>
+									<th>姓名</th>
+									<th>电话</th>
+									<th>备用电话</th>
+									<th>邮箱</th>
+									<th>部门</th>
+									<th>上级</th>
+									<th>角色</th>
+									<th>操作</th>									
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>张三 </td>
+									<td>138888888</td>
+									<td>188888888</td>
+									<td>8888@8888.com</td>
+									<td>工程部</td>
+									<td>李总</td>
+									<td>小组主管</td>
+									<td>删除 修改</td>
+								</tr>
+								<tr>
+									<td>2</td>
+                                    <td>张三 </td>
+                                    <td>138888888</td>
+                                    <td>188888888</td>
+                                    <td>8888@8888.com</td>
+                                    <td>工程部</td>
+                                    <td>李总</td>
+                                    <td>小组主管</td>
+                                    <td>删除 修改</td>
+								</tr>
+								<tr>
+									<td>3</td>
+                                    <td>张三 </td>
+                                    <td>138888888</td>
+                                    <td>188888888</td>
+                                    <td>8888@8888.com</td>
+                                    <td>工程部</td>
+                                    <td>李总</td>
+                                    <td>小组主管</td>
+                                    <td>删除 修改</td>
+								</tr>
+								<tr>
+									<td>4</td>
+                                    <td>张三 </td>
+                                    <td>138888888</td>
+                                    <td>188888888</td>
+                                    <td>8888@8888.com</td>
+                                    <td>工程部</td>
+                                    <td>李总</td>
+                                    <td>小组主管</td>
+                                    <td>删除 修改</td>
+								</tr>
+								<tr>
+									<td>5</td>
+                                    <td>张三 </td>
+                                    <td>138888888</td>
+                                    <td>188888888</td>
+                                    <td>8888@8888.com</td>
+                                    <td>工程部</td>
+                                    <td>李总</td>
+                                    <td>小组主管</td>
+                                    <td>删除 修改</td>
+								</tr>
+								<tr>
+									<td>6</td>
+                                    <td>张三 </td>
+                                    <td>138888888</td>
+                                    <td>188888888</td>
+                                    <td>8888@8888.com</td>
+                                    <td>工程部</td>
+                                    <td>李总</td>
+                                    <td>小组主管</td>
+                                    <td>删除 修改</td>
+								</tr>
+								<tr>
+									<td>7</td>
+                                    <td>张三 </td>
+                                    <td>138888888</td>
+                                    <td>188888888</td>
+                                    <td>8888@8888.com</td>
+                                    <td>工程部</td>
+                                    <td>李总</td>
+                                    <td>小组主管</td>
+                                    <td>删除 修改</td>
+								</tr>
+								<tr>
+									<td>8</td>
+                                    <td>张三 </td>
+                                    <td>138888888</td>
+                                    <td>188888888</td>
+                                    <td>8888@8888.com</td>
+                                    <td>工程部</td>
+                                    <td>李总</td>
+                                    <td>小组主管</td>
+                                    <td>删除 修改</td>
+								</tr>
+								<tr>
+									<td>9</td>
+                                    <td>张三 </td>
+                                    <td>138888888</td>
+                                    <td>188888888</td>
+                                    <td>8888@8888.com</td>
+                                    <td>工程部</td>
+                                    <td>李总</td>
+                                    <td>小组主管</td>
+                                    <td>删除 修改</td>
+								</tr>
+								<tr>
+									<td>10</td>
+                                    <td>张三 </td>
+                                    <td>138888888</td>
+                                    <td>188888888</td>
+                                    <td>8888@8888.com</td>
+                                    <td>工程部</td>
+                                    <td>李总</td>
+                                    <td>小组主管</td>
+                                    <td>删除 修改</td>
+								</tr>
+							</tbody>
+					    </table> 
+					</div>
+					<!--分页-->
+                    <div class="con nodis">
+                        <div class="border" style="padding: 20px 0 100px">
+                            <table class="con_table con_table02 mb">
+                                <tbody>
+                                    <tr>
+                                        <td class="param">公司名称： </td>
+                                        <td>
+                                            <input type="text" class="fl border02 input width01 marl">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="param">公司编号： </td>
+                                        <td>
+                                            <input type="text" class="fl border02 input width01 marl">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="param">系统名称： </td>
+                                        <td>
+                                            <input type="text" class="fl border02 input width01 marl">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="param">系统logo： </td>
+                                        <td>
+                                            <input type="file" class="fl border02 input width01 marl">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="param">同步频次： </td>
+                                        <td>
+                                            <input type="text" class="fl border02 input width01 marl" value="60"><span class="fl">秒</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="param">是否显示： </td>
+                                        <td class="left">
+                                            <label class="bui-radios-label bui-radios-anim fl marl">
+                                                <input type="radio" name="sex"><i class="bui-radios"></i>是
+                                            </label>
+                                            <label class="bui-radios-label bui-radios-anim fl marl">
+                                                <input type="radio" name="sex"><i class="bui-radios"></i>否
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="param">显示标题： </td>
+                                        <td>
+                                            <input type="text" class="fl border02 input width01 marl">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a href="#" class="buttonN ml01 fl mt01">取消</a>
+                            <a href="#" class="buttonOk ml02 fl mt01">确定</a>
+                        </div>
+                    </div>
+                </div>
+				<!-- 内容结束 -->
+			</div>
+			<!-- 右侧内容结束 -->
+		</div>
+	</div>
+    <link rel="stylesheet" href="js/layui/css/layui.css" media="all">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/layui/layui.js" charset="utf-8"></script>
+     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=dFexIpV6dVUeNQyFY8rfZGh4"></script>
+    <script src="js/map.js"></script>
+	<script>
+	    //右侧一级tab
+	    $('.first > ul >li').click(function (){
+            firstFval = $(this).index();
+            $(this).addClass('now').siblings().removeClass('now');
+            $('.in_content>.con').eq(firstFval).show().siblings().hide(); 
+            
+        });
+        // 右侧二级tab
+        $('.second>ul>li').click(function (){
+            secondtFval = $(this).index();
+            $(this).addClass('select').siblings().removeClass('select');
+            $('.con>.con_second').eq(secondtFval).show().siblings('.con_second').hide(); 
+        })
+		layui.use('layer', function () {
+		    var layer = layui.layer;
+		});
+		//重置密码
+		$('.btn_reset').on('click', function(){
+		  	layer.open({
+				type: 1,//不显示标题栏
+				title: false ,
+				area: ['320px', '200px'],
+				shadeClose: true, //点击遮罩关闭
+				btn: ['确认', '取消'],
+				content: '\<\div style="margin-top:30px;text-align:center;font-size: 18px;">是否重置该用户密码\<\/div>\<\div style="margin-top:21px;text-align:left;line-height:25px;padding:0 42px;font-size: 14px;">重置密码后改用户的登录密码将恢复到系统默认密码！\<\/div>',
+			});
+		});
+		// 是否启用
+		$('.btn_able2').on('click', function(){
+			var _this = $(this);	
+			if (_this.html() == "启用") {
+				layer.open({
+					type: 1,
+					title: false ,
+					area: ['320px', '160px'],
+					shadeClose: true,
+					btn: ['确认', '取消'],
+					content: '\<\div style="margin-top:51px;text-align:center;font-size: 18px;">是否确认启用该用户？\<\/div>',
+					yes: function(index,layero){
+						_this.html("禁用").css("color","#e0281a").removeClass("green").addClass("red");
+					   	_this.parent().siblings(".btn_able1").html("启用").removeClass("red").addClass("green");				   
+					   layer.close(index); //如果设定了yes回调，需进行手工关闭
+					}
+				});
+
+			}else{
+				layer.open({
+					type: 1,
+					title: false ,
+					area: ['320px', '160px'],
+					shadeClose: true, //点击遮罩关闭
+					btn: ['确认', '取消'],
+					content: '\<\div style="margin-top:51px;text-align:center;font-size: 18px;">是否确认禁用该用户？\<\/div>',
+					yes: function(index,layero){
+						_this.html("启用").css("color","#39ac0c").removeClass("red").addClass("green");
+					   	_this.parent().siblings(".btn_able1").html("禁用").removeClass("green").addClass("red");	
+					   layer.close(index); //如果设定了yes回调，需进行手工关闭
+					}
+				});
+			}	
+		})
+	</script> 
+</body>
+</html>

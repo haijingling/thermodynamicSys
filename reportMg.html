@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>鑫丰热力智能数据监控系统</title>
+	<link rel="stylesheet" type="text/css"  href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="js/layui/css/layui.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/manage.css">
+    <style>
+        .param {
+            text-align: right !important;
+            width: 170px;
+        }
+
+        #stateModel1 > .panel {
+            padding: 30px;
+        }
+
+        #stateModel1 .panel-area {
+            display: inline-block;
+            width: 200px;
+        }
+
+        #stateModel1 .panel-area-title {
+            line-height: 30px;
+        }
+
+        #stateModel1 .panel-area-ctrl {
+            width: 100%;
+            height: 260px;
+        }
+
+        #stateModel1 .panel-area-btns {
+            display: inline-block;
+            width: 30px;
+            vertical-align: top;
+            box-sizing: border-box;
+            padding-top: 60px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+	<!-- 框架布局 -->
+	<div id="wrapper">
+		<div id="right">
+			<!-- 右侧内容开始 -->
+			<div class="right_in"> 
+				<!-- 用户中心模块开始 -->
+				<div class="first border-b">
+				     <ul>
+				     	<li class="now">报表设置</li>
+				     	<li>报表查询</li>
+				     </ul>
+				</div> 
+				<!-- 内容开始 -->
+				<div class="in_content">
+					<div class="con">
+                        <div class="con_title">
+                            <div class="choose mr re">
+                                <div class="choose_title fl ">关键字:</div>
+                                <div class="choose_box fl re  border02">
+                                    <input type="text" class="input01">
+                                </div>
+                                <a href="#" class="button02 marl">搜索</a>
+                            </div>
+                            <a href="#" class="button ml02 fr">添加</a>
+                        </div>
+						<table class="con_table">
+							<thead>
+								<tr>                                                                      
+									<th>序号</th>
+									<th>报表名称</th>
+									<th>报表类型</th>
+                                    <th>是否定时</th>
+                                    <th>导出时间</th>
+									<th>导出数据</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>日度报表 </td>
+									<td>日</td>
+									<td>是</td>
+									<td>23:59</td>
+									<td>站点名称,机组名称、室外温度，室内温度，一二次温度、压力、流量，热量消耗，水量消耗，电量消耗等</td>
+									<td>删除 修改</td>
+									
+								</tr>
+								<tr>
+                                    <td>2</td>
+                                    <td>周度报表 </td>
+                                    <td>周</td>
+                                    <td>是</td>
+                                    <td> 23:59</td>
+                                    <td>站点名称,机组名称、室外温度，室内温度，一二次温度、压力、流量，热量消耗，水量消耗，电量消耗等</td>
+                                    <td>删除 修改</td>
+								</tr>
+								 <tr>
+                             <td>3</td>
+                             <td>月度报表 </td>
+                             <td>月</td>
+                             <td>是</td>
+                             <td>23:59</td>
+                             <td>站点名称,机组名称、室外温度，室内温度，一二次温度、压力、流量，热量消耗，水量消耗，电量消耗等</td>
+                             <td>删除 修改</td>
+								</tr>
+                               
+                                <tr>
+                                    <td>4</td>
+                                    <td>季度报表 </td>
+                                    <td>季</td>
+                                    <td>是</td>
+                                    <td>23:59</td>
+                                    <td>站点名称,机组名称、室外温度，室内温度，一二次温度、压力、流量，热量消耗，水量消耗，电量消耗等</td>
+                                    <td>删除 修改</td>
+                                </tr>
+							</tbody>
+					    </table>  
+					</div>
+					<div class="con nodis">
+                       
+                        <div class="parambox_year mr re ">
+                            <ul class="fl ">
+                                <li class="fl marl01">时&nbsp;&nbsp;&nbsp;&nbsp;间：</li>
+                                <li class="fr border02 marl"><input id="startTime" placeholder="2018-01-10" readonly="readonly" type="text" class="right border02"></li>
+                            </ul>
+                            <ul class="fl">
+                                <li class="fl marl01">至</li>
+                                <li class="fr border02 marl01"><input id="endTime" placeholder="2018-01-10" readonly="readonly" type="text" class="right border02"></li>
+                            </ul>
+                        </div>
+                        <div class="choose mr re" style="margin:15px 0 ">
+                            <ul class="fl ">
+                                <li class="fl marl01">关键字：</li>
+                                <li class="fr marl"><div style="width:158px; height:29px;margin-left: 2px;" class="border02 "></div></li>
+                            </ul>
+                            <a href="#" class="button02 marl">查询</a>
+                        </div>
+					    <div class="con_second">
+					    	<table class="con_table">
+								<thead>
+									<tr>                                                                      
+										<th>序号</th>
+										<th>报名名称</th>
+                                        <th>导出时间</th>
+										<th>查询条件</th>
+										<th>导出数据</th>
+										<th>下载</th>								
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>月度导出 </td>
+                                        <td>2019/12/01 12：10</td>
+										<td>碧桂园；高区；2019-12-20；2019-12-30</td>
+										<td>站点名称,机组名称、室外温度，室内温度，一二次温度、压力、流量，热量消耗，水量消耗，电量消耗等</td>
+										<td width="100"><a href="#">下载</a></td>
+									</tr>
+									<tr>
+										<td>2</td>
+                                        <td>月度导出 </td>
+                                        <td>2019/12/01 12：10</td>
+                                        <td>碧桂园；高区；2019-12-20；2019-12-30</td>
+                                        <td>站点名称,机组名称、室外温度，室内温度，一二次温度、压力、流量，热量消耗，水量消耗，电量消耗等</td>
+                                        <td><a href="#">下载</a></td>
+									</tr>
+									 <tr>
+										<td>3</td>
+                                        <td>月度导出 </td>
+                                        <td>2019/12/01 12：10</td>
+                                        <td>碧桂园；高区；2019-12-20；2019-12-30</td>
+                                        <td>站点名称,机组名称、室外温度，室内温度，一二次温度、压力、流量，热量消耗，水量消耗，电量消耗等</td>
+                                        <td><a href="#">下载</a></td>
+									</tr>
+								</tbody>
+						    </table> 
+					    </div>
+					    <div class="con_second nodis">
+					        <div>ddddd</div>
+					    </div>
+						 
+					</div>
+					<!--分页-->
+					<div id="demo0" class="fr"></div>
+				</div>
+				<!-- 内容结束 -->
+			</div>
+			<!-- 右侧内容结束 -->
+		</div>
+	</div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/layui/layui.js" charset="utf-8"></script>
+     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=dFexIpV6dVUeNQyFY8rfZGh4"></script>
+    <script src="js/map.js"></script>
+	<script>
+	    //右侧一级tab
+	    $('.first > ul >li').click(function (){
+            firstFval = $(this).index();
+            $(this).addClass('now').siblings().removeClass('now');
+            $('.in_content>.con').eq(firstFval).show().siblings().hide(); 
+            
+        });
+        // 右侧二级tab
+        $('.second>ul>li').click(function (){
+            secondtFval = $(this).index();
+            $(this).addClass('select').siblings().removeClass('select');
+            $('.con>.con_second').eq(secondtFval).show().siblings('.con_second').hide(); 
+        })
+		layui.use('layer', function () {
+		    var layer = layui.layer;
+		});
+		//重置密码
+		$('.btn_reset').on('click', function(){
+		  	layer.open({
+				type: 1,//不显示标题栏
+				title: false ,
+				area: ['320px', '200px'],
+				shadeClose: true, //点击遮罩关闭
+				btn: ['确认', '取消'],
+				content: '\<\div style="margin-top:30px;text-align:center;font-size: 18px;">是否重置该用户密码\<\/div>\<\div style="margin-top:21px;text-align:left;line-height:25px;padding:0 42px;font-size: 14px;">重置密码后改用户的登录密码将恢复到系统默认密码！\<\/div>',
+			});
+		});
+		// 是否启用
+		$('.btn_able2').on('click', function(){
+			var _this = $(this);	
+			if (_this.html() == "启用") {
+				layer.open({
+					type: 1,
+					title: false ,
+					area: ['320px', '160px'],
+					shadeClose: true,
+					btn: ['确认', '取消'],
+					content: '\<\div style="margin-top:51px;text-align:center;font-size: 18px;">是否确认启用该用户？\<\/div>',
+					yes: function(index,layero){
+						_this.html("禁用").css("color","#e0281a").removeClass("green").addClass("red");
+					   	_this.parent().siblings(".btn_able1").html("启用").removeClass("red").addClass("green");				   
+					   layer.close(index); //如果设定了yes回调，需进行手工关闭
+					}
+				});
+
+			}else{
+				layer.open({
+					type: 1,
+					title: false ,
+					area: ['320px', '160px'],
+					shadeClose: true, //点击遮罩关闭
+					btn: ['确认', '取消'],
+					content: '\<\div style="margin-top:51px;text-align:center;font-size: 18px;">是否确认禁用该用户？\<\/div>',
+					yes: function(index,layero){
+						_this.html("启用").css("color","#39ac0c").removeClass("red").addClass("green");
+					   	_this.parent().siblings(".btn_able1").html("禁用").removeClass("green").addClass("red");	
+					   layer.close(index); //如果设定了yes回调，需进行手工关闭
+					}
+				});
+			}	
+		})
+			 
+	</script> 
+</body>
+</html>
